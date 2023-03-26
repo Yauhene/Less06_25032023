@@ -4,6 +4,15 @@ int max = 100;
 
 int[] array = new int[n];
 
+bool Check(int[] array)
+{
+    for (int i = 0; i < n - 1; i++)
+    { 
+        if (array[i] > array[i + 1]) return false;
+    }
+    return true;
+}
+
 
 for (int i = 0; i < n - 1; i++)
 {
@@ -12,6 +21,7 @@ for (int i = 0; i < n - 1; i++)
 }
 
 Console.WriteLine($"[{String.Join(',', array)}]");
+Console.WriteLine(Check(array));
 
 for (int k = 0; k < n - 1; k++)
 {
@@ -25,6 +35,8 @@ for (int k = 0; k < n - 1; k++)
         }
     }
 
-    Console.WriteLine($"[{String.Join(',', array)}]");
+    
 }
+Console.WriteLine($"[{String.Join(',', array)}]");
+Console.WriteLine(Check(array));
 
