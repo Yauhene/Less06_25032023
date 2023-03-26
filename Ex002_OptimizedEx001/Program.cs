@@ -6,7 +6,7 @@ int max = 100;
 
 int[] array = new int[n];
 
-
+///
 bool Check(int[] array)
 {
     int size = array.Length;
